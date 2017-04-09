@@ -1,0 +1,9 @@
+1. 启动和停止 (启动后将进程号存入文件)
+  # nohup java -jar first-springboot-jersey.jar --server.port = 8080 &
+  # echo $! > demo@8080.pid
+  
+  # curl http://localhost:8080/hi
+  ["hello world", "hhaa"]
+  
+  # kill -9 $(cat demo@8080.pid) 
+  [1] + 9182 killed nohup java -jar .......
